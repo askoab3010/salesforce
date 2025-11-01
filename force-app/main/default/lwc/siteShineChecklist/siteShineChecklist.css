@@ -1,0 +1,83 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 16rem;
+}
+
+.header {
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--lwc-colorBorder, #dddbda);
+}
+
+.header h2 {
+    margin: 0;
+}
+
+.download-link {
+    display: inline-block;
+    margin-top: 0.25rem;
+    color: var(--lwc-colorBrand, #1b96ff);
+    font-weight: 600;
+}
+
+.placeholder {
+    display: inline-block;
+    margin-top: 0.25rem;
+    color: var(--lwc-colorTextWeak, #706e6b);
+}
+
+.body {
+    flex: 1;
+    padding-top: 0.75rem;
+}
+
+.list-wrapper {
+    max-height: 16rem;
+    overflow: auto;
+    padding-right: 0.25rem;
+}
+
+.checklist {
+    margin: 0;
+    padding-left: 1.125rem;
+    list-style-type: disc;
+}
+
+.checklist li {
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+    white-space: pre-line;
+}
+
+.checklist li.heading {
+    list-style: none;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-left: 0;
+}
+
+.checklist li.heading:first-child {
+    margin-top: 0;
+}
+
+.checklist li.subheading {
+    list-style: none;
+    margin-top: 0.75rem;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+    padding-left: 0;
+}
+
+.checklist li.nested {
+    margin-left: 1rem;
+    list-style-type: disc;
+}
+
+.checklist li.note {
+    list-style: none;
+    font-style: italic;
+    color: var(--lwc-colorTextWeak, #706e6b);
+}
